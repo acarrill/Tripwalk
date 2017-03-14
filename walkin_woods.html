@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Perspective Projection</title>
+    <style>
+    @font-face {
+      font-family: woods;
+      src: url("woods.ttf");
+    }
+    body {
+      background-image: url("awesome.jpg");
+    }
+        canvas{
+            margin: 0px auto;
+            margin-top: 0px;
+            margin-left: 330px;
+            margin-bottom: 0px;
+        }
+        p {
+            font-size: 20px;
+            font-family: "woods";
+            text-align: center;
+            color: yellow;
+            line-height: 1px;
+
+        }
+    </style>
+  </head>
+
+  <body onload="startGL()">
+    <p>Arrow left or right to initialize map</p>
+    <canvas id="webgl" width="700" height="600">
+    Please use a browser that supports "canvas"
+    </canvas>
+
+    <script src="lib/webgl-utils.js"></script>
+    <script src="lib/webgl-debug.js"></script>
+    <script src="lib/cuon-utils.js"></script>
+    <script src="lib/cuon-matrix.js"></script>
+    <script src="walkin_woods.js"></script>
+  </body>
+</html>
